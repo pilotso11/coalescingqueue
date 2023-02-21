@@ -79,6 +79,8 @@ func (q *CoalescingQueue[T]) Pop() (item T, found bool) {
 
 // Size returns the length of the queue
 func (q *CoalescingQueue[T]) Size() int {
+	q.lock.Lock()
+	defer q.lock.Unlock()
 	return len(q.queue)
 }
 
