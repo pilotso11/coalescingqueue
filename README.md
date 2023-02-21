@@ -6,8 +6,11 @@ of items already in the queue does not extend the queue length.
 A useful data structure for messaging applications where there are either multiple producers
 that may produce duplicates or slow consumers.
 
-Usage
+## Installataion
 
+`go get github.com/pilotso11/coalescingqueue`
+
+## Example 
 ```go
 package main
 
@@ -37,3 +40,4 @@ func main() {
 // item2
 // item3
 ```
+On GO Playground https://go.dev/play/p/SJHxfD8hLnq
