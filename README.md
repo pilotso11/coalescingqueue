@@ -6,7 +6,7 @@ of items already in the queue does not extend the queue length.
 A useful data structure for messaging applications where there are either multiple producers
 that may produce duplicates or slow consumers.
 
-## Installataion
+## Installation
 
 `go get github.com/pilotso11/coalescingqueue`
 
